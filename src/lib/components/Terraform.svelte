@@ -1,0 +1,7 @@
+<script lang="ts">
+	export let width: number = 50;
+	export let height: number = 50;
+	const svgContent = `<svg xmlns="http://www.w3.org/2000/svg" id="Logos" viewBox="0 0 50 72" width="${width}" height="${height}"><defs><style>.cls-1{fill:#a067da;fill-rule:evenodd;stroke-width:0}</style></defs><path d="m17.2 17.5 15.5 9v18l-15.5-9v-18ZM34.5 26.5v18l15.5-9v-18l-15.5 9ZM0 7.5v18l15.5 9v-18L0 7.5ZM17.2 55.5l15.5 9v-18l-15.5-9v18Z" class="cls-1"/></svg>`;
+</script>
+
+{@html svgContent}

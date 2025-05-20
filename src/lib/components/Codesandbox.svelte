@@ -1,0 +1,7 @@
+<script lang="ts">
+	export let width: number = 50;
+	export let height: number = 50;
+	const svgContent = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600" width="${width}" height="${height}"><path fill="#DCFF50" fill-rule="evenodd" d="M150 150h299.832v300H150V150Zm269.168 30.682v238.636H180.665V180.682h238.503Z" clip-rule="evenodd"/></svg>`;
+</script>
+
+{@html svgContent}
