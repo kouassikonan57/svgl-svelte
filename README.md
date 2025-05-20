@@ -28,7 +28,7 @@ bun add @selemondev/svgl-svelte
 
 ## 🚀 Usage
 
-Visit the [Svgl Components](https://svgl.app/) page to explore the available Svgl components.
+Visit the [Svgl logos](https://svgl.app/) page to explore the available Svgl logos.
 
 ```html
 <script lang="ts">
