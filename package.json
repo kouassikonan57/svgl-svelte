@@ -5,6 +5,7 @@
 	"author": "Selemondev",
 	"private": false,
 	"license": "MIT",
+	"packageManager": "pnpm@10.6.5",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && pnpm prepack",
