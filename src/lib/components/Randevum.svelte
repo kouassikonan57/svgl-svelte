@@ -1,10 +1,10 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1 64 64" {...rest}
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1 64 64" {width} {height} {...rest}
 	><path fill="#1b8cff" d="M55 35H9L2 54h60Z" data-name="Path 191" opacity=".3" /><path
 		fill="none"
 		stroke="#fff"

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
 <svg
@@ -9,6 +9,8 @@
 	xml:space="preserve"
 	style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2"
 	viewBox="0 0 1146 1117"
+	{width}
+	{height}
 	{...rest}
 	><path d="M0 0h1145.83v1116.67H0z" style="fill:none" /><path
 		d="M48.642.184h177.4c26.896 0 48.642 21.747 48.642 48.643v170.532c0 26.895-21.746 48.641-48.642 48.641h-177.4C21.746 268 0 246.254 0 219.359V48.827C0 21.931 21.746.184 48.642.184Z"

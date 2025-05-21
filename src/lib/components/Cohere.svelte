@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
 <svg
@@ -9,6 +9,8 @@
 	xml:space="preserve"
 	style="enable-background:new 0 0 75 75"
 	viewBox="0 0 75 75"
+	{width}
+	{height}
 	{...rest}
 	><path
 		d="M24.3 44.7c2 0 6-.1 11.6-2.4 6.5-2.7 19.3-7.5 28.6-12.5 6.5-3.5 9.3-8.1 9.3-14.3C73.8 7 66.9 0 58.3 0h-36C10 0 0 10 0 22.3s9.4 22.4 24.3 22.4z"

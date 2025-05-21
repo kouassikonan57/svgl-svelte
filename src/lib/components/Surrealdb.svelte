@@ -1,13 +1,15 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
 <svg
 	viewBox="0 0 256 299"
 	xmlns="http://www.w3.org/2000/svg"
 	preserveAspectRatio="xMidYMid"
+	{width}
+	{height}
 	{...rest}
 	><defs
 		><linearGradient id="a" x1="31.047%" x2="68.957%" y1="11.705%" y2="88.303%"

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
 <svg
@@ -9,6 +9,8 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	fill="none"
 	viewBox="0 0 193 193"
+	{width}
+	{height}
 	{...rest}
 	><defs><path id="reuse-0" fill="#fff" d="M8.271 8.271h176.457v176.457H8.271z" /></defs><g
 		clip-path="url(#a)"

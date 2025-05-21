@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
 <svg
@@ -10,6 +10,8 @@
 	id="svg62"
 	version="1.1"
 	viewBox="0 0 50 50"
+	{width}
+	{height}
 	{...rest}
 	><defs id="defs11"
 		><linearGradient id="gradient" x1="0" x2="100" y1="100" y2="0" gradientUnits="userSpaceOnUse"

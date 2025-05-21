@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
 <svg
@@ -9,6 +9,8 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	preserveAspectRatio="xMidYMid"
 	viewBox="0 0 256 256"
+	{width}
+	{height}
 	{...rest}
 	><defs
 		><linearGradient id="a" x1="42.173%" x2="57.827%" y1=".584%" y2="99.416%"

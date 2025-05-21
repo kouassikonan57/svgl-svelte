@@ -1,10 +1,10 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105 105" {...rest}>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105 105" {width} {height} {...rest}>
 	<linearGradient id="a" x1="65.05" x2="52.91" y1="60.03" y2="28.18" gradientUnits="userSpaceOnUse">
 		<stop offset="0" stop-color="#fe2857" />
 		<stop offset=".06" stop-color="#fe3052" />

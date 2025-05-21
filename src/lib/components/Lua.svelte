@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
 <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
@@ -16,6 +16,8 @@
 	viewBox="0 0 947 947"
 	enable-background="new 0 0 947 947"
 	xml:space="preserve"
+	{width}
+	{height}
 	{...rest}
 >
 	<g>

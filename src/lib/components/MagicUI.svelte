@@ -1,10 +1,17 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
-<svg viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" class="size-6" {...rest}
+<svg
+	viewBox="0 0 256 256"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+	class="size-6"
+	{width}
+	{height}
+	{...rest}
 	><rect width="256" height="256" rx="128" fill="url(#paint0_linear_601_4643)"></rect><rect
 		width="256"
 		height="256"

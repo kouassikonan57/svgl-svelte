@@ -1,10 +1,16 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
-<svg viewBox="0 0 70 51" xmlns="http://www.w3.org/2000/svg" class="css-12xw6g8" {...rest}
+<svg
+	viewBox="0 0 70 51"
+	xmlns="http://www.w3.org/2000/svg"
+	class="css-12xw6g8"
+	{width}
+	{height}
+	{...rest}
 	><ellipse cx="18.0497" cy="17.5852" rx="16.6122" ry="16.5852" fill="#0BF082"></ellipse><path
 		fill-rule="evenodd"
 		clip-rule="evenodd"

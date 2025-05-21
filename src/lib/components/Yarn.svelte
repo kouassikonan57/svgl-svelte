@@ -1,10 +1,16 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 518 518" {...rest}
+<svg
+	id="Layer_1"
+	xmlns="http://www.w3.org/2000/svg"
+	viewBox="0 0 518 518"
+	{width}
+	{height}
+	{...rest}
 	><style>
 		.st0 {
 			fill: #2c8ebb;

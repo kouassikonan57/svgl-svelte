@@ -1,13 +1,15 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
 <svg
 	viewBox="0 0 256 256"
 	xmlns="http://www.w3.org/2000/svg"
 	preserveAspectRatio="xMinYMin meet"
+	{width}
+	{height}
 	{...rest}
 >
 	<circle cx="128" cy="128" r="114" stroke="#010101" stroke-width="20" fill="none" />

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
 <svg
@@ -11,6 +11,8 @@
 	clip-rule="evenodd"
 	stroke-linejoin="round"
 	stroke-miterlimit="2"
+	{width}
+	{height}
 	{...rest}
 >
 	<path

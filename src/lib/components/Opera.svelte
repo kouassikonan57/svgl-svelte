@@ -1,10 +1,17 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1000 1000" {...rest}>
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	xml:space="preserve"
+	viewBox="0 0 1000 1000"
+	{width}
+	{height}
+	{...rest}
+>
 	<linearGradient
 		id="a"
 		x1="416.6229"

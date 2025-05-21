@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
 <svg
@@ -12,6 +12,8 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xml:space="preserve"
 	fill="#000000"
+	{width}
+	{height}
 	{...rest}
 >
 	<g id="SVGRepo_bgCarrier" stroke-width="0"> </g>

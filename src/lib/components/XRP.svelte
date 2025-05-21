@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
 <svg
@@ -9,6 +9,8 @@
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
+	{width}
+	{height}
 	{...rest}
 	><title>icon/xrp</title><desc>Created with Sketch.</desc><defs
 		><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1"

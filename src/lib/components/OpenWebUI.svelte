@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
 <svg
@@ -10,6 +10,8 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xmlns:svgjs="http://svgjs.dev/svgjs"
 	viewBox="0 0 500 500"
+	{width}
+	{height}
 	{...rest}
 	><image
 		width="500"

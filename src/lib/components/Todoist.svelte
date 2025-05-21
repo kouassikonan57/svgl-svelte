@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
 <svg
@@ -10,6 +10,8 @@
 	version="1.1"
 	viewBox="0 0 152 152"
 	xml:space="preserve"
+	{width}
+	{height}
 	{...rest}
 >
 	<desc>Created with Fabric.js 3.6.6</desc>

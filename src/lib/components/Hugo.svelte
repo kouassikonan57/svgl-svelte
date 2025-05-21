@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
 <svg
@@ -10,6 +10,8 @@
 	stroke-
 	aria-label="Logo"
 	viewBox="0 0 1493 391"
+	{width}
+	{height}
 	{...rest}
 	><path
 		fill="#ebb951"

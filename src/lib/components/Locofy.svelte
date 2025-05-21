@@ -1,13 +1,15 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
 <svg
 	enable-background="new 0 0 48.3 48.3"
 	viewBox="0 0 48.3 48.3"
 	xmlns="http://www.w3.org/2000/svg"
+	{width}
+	{height}
 	{...rest}
 	><g clip-rule="evenodd" fill-rule="evenodd"
 		><circle cx="24.1" cy="24.1" fill="#457eff" r="23.5" /><path

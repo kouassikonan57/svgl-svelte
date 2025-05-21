@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
 <svg
@@ -21,6 +21,8 @@
 	id="svg3967"
 	sodipodi:docname="alacritty.svg"
 	inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+	{width}
+	{height}
 	{...rest}
 	><metadata id="metadata3971"
 		><rdf:RDF

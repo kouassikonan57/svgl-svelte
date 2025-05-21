@@ -1,10 +1,10 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
-<svg viewBox="0 0 83 80" fill="none" xmlns="http://www.w3.org/2000/svg" {...rest}>
+<svg viewBox="0 0 83 80" fill="none" xmlns="http://www.w3.org/2000/svg" {width} {height} {...rest}>
 	<g clip-path="url(#clip0_906_1820)">
 		<path
 			d="M14.5299 0H67.5214C75.5556 0 82.0513 6.49573 82.0513 14.5299V65.4701C82.0513 73.5043 75.5556 80 67.5214 80H14.5299C6.49573 80 0 73.5043 0 65.4701V14.5299C0 6.49573 6.49573 0 14.5299 0Z"

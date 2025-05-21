@@ -10,4 +10,7 @@ export interface Svgl {
 	brandUrl?: string;
 }
 
-export type IconProps = HTMLAttributes<SVGElement>;
+export interface IconProps extends HTMLAttributes<SVGElement> {
+	width?: number;
+	height?: number;
+}

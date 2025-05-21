@@ -1,13 +1,15 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	style="transform:matrix(1.11388,0,0,1.11388,0,0);transform-origin:50% 50%;cursor:move;transition:transform 200ms ease-in-out 0s"
 	viewBox="0 0 4040 4040"
+	{width}
+	{height}
 	{...rest}
 	><defs
 		><linearGradient id="a" x1="75%" x2="25%" y1="45%" y2="90%" gradientUnits="userSpaceOnUse"

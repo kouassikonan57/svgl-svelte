@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { IconProps } from '$lib/types/index.js';
 
-	let { ...rest }: IconProps = $props();
+	let { width = 50, height = 50, ...rest }: IconProps = $props();
 </script>
 
 <svg
@@ -10,6 +10,8 @@
 	stroke-miterlimit="10"
 	style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round"
 	viewBox="0 0 1024 1024"
+	{width}
+	{height}
 	{...rest}
 	><clipPath id="a"><path d="M0 0h1024v1024H0z" /></clipPath><path
 		fill="#63c862"
