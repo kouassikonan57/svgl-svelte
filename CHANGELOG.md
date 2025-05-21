@@ -1,5 +1,29 @@
 # Changelog
 
+## v0.0.2
+
+[compare changes](https://github.com/selemondev/svgl-svelte/compare/v0.0.1...v0.0.2)
+
+### 🚀 Enhancements
+
+- Add suffix to avoid polluting the namespace ([26efa92](https://github.com/selemondev/svgl-svelte/commit/26efa92))
+
+### 📖 Documentation
+
+- Update README.md file ([bdc05d6](https://github.com/selemondev/svgl-svelte/commit/bdc05d6))
+
+### 🏡 Chore
+
+- Add public access config for npm publish ([3a75d12](https://github.com/selemondev/svgl-svelte/commit/3a75d12))
+- Configure package for public publishing ([28cc7c4](https://github.com/selemondev/svgl-svelte/commit/28cc7c4))
+- Add package.json metadata ([a7ec2be](https://github.com/selemondev/svgl-svelte/commit/a7ec2be))
+- Add github workflows and miscellaneous files ([80c6fe0](https://github.com/selemondev/svgl-svelte/commit/80c6fe0))
+- Add MIT license ([0a318c0](https://github.com/selemondev/svgl-svelte/commit/0a318c0))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
 ## v0.0.1
 
 ### 📖 Documentation
