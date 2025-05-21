@@ -35,7 +35,7 @@ Visit the [Svgl logos](https://svgl.app/) page to explore the available Svgl log
 	import { SvelteLogo } from '@selemondev/svgl-svelte';
 </script>
 
-<SvelteLogo height="{200}" width="{200}" />
+<SvelteLogo height={200} width={200} />
 ```
 
 ## ©️ Eco-system
