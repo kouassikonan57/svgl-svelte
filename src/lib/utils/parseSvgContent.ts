@@ -9,17 +9,17 @@ export const parseSvgContent = (content: string) => {
 		attrs = attrs.replace(/\s*width="[^"]*"/i, '');
 		attrs = attrs.replace(/\s*height="[^"]*"/i, '');
 
-		return `<svg${attrs} width="\${width}" height="\${height}">`;
+		return `<svg${attrs} {...rest}>`;
 	});
 
 	content = content.replace(/`/g, '\\`');
 
 	return {
 		scriptTag: `<script lang="ts">
-  export let width: number = 50;
-  export let height: number = 50;
-  const svgContent = \`${content}\`;
+  import type { IconProps } from '$lib/types/index.js';
+
+  let { ...rest }: IconProps = $props();
 </script>`,
-		templateContent: '{@html svgContent}'
+		templateContent: content
 	};
 };

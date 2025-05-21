@@ -1,3 +1,5 @@
+import type { HTMLAttributes } from 'svelte/elements';
+
 export interface Svgl {
 	id: number;
 	route: string | { light?: string; dark?: string };
@@ -7,3 +9,5 @@ export interface Svgl {
 	wordmark?: string | { light?: string; dark?: string };
 	brandUrl?: string;
 }
+
+export type IconProps = HTMLAttributes<SVGElement>;
