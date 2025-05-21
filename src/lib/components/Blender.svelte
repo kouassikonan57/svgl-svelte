@@ -1,7 +1,12 @@
 <script lang="ts">
-	import type { IconProps } from '$lib/types/index.js';
+	import type { HTMLAttributes } from 'svelte/elements';
 
-	let { width = 50, height = 50, ...rest }: IconProps = $props();
+	export interface Props extends HTMLAttributes<SVGElement> {
+		width?: number;
+		height?: number;
+	}
+
+	let { width = 50, height = 50, ...rest }: Props = $props();
 </script>
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0.1 16.7 2472.8 1996.5" {width} {height} {...rest}

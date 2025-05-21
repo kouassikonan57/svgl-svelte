@@ -1,7 +1,12 @@
 <script lang="ts">
-	import type { IconProps } from '$lib/types/index.js';
+	import type { HTMLAttributes } from 'svelte/elements';
 
-	let { width = 50, height = 50, ...rest }: IconProps = $props();
+	export interface Props extends HTMLAttributes<SVGElement> {
+		width?: number;
+		height?: number;
+	}
+
+	let { width = 50, height = 50, ...rest }: Props = $props();
 </script>
 
 <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
