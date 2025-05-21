@@ -1,8 +1,6 @@
 # Changelog
 
-
 ## v0.0.1
-
 
 ### 📖 Documentation
 
@@ -15,4 +13,3 @@
 ### ❤️ Contributors
 
 - Selemondev <selemondev19@gmail.com>
-

@@ -32,10 +32,10 @@ Visit the [Svgl logos](https://svgl.app/) page to explore the available Svgl log
 
 ```html
 <script lang="ts">
-import { Svelte } from '@selemondev/svgl-svelte';
+	import { SvelteLogo } from '@selemondev/svgl-svelte';
 </script>
-  
-<Svelte height={200} width={200} />
+
+<SvelteLogo height="{200}" width="{200}" />
 ```
 
 ## ©️ Eco-system
