@@ -1,13 +1,13 @@
 {
 	"name": "@selemondev/svgl-svelte",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "An optimized package with SVG logos to be used as Svelte components ✨",
 	"author": "Selemondev",
 	"private": false,
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build && pnpm prepack",
+		"build": "pnpm prepack",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"generate:components": "pnpm dlx esno scripts/index.ts && pnpm format",
