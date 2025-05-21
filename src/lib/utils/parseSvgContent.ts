@@ -9,17 +9,22 @@ export const parseSvgContent = (content: string) => {
 		attrs = attrs.replace(/\s*width="[^"]*"/i, '');
 		attrs = attrs.replace(/\s*height="[^"]*"/i, '');
 
-		return `<svg${attrs} width="\${width}" height="\${height}">`;
+		return `<svg${attrs} {width} {height} {...rest}>`;
 	});
 
 	content = content.replace(/`/g, '\\`');
 
 	return {
 		scriptTag: `<script lang="ts">
-  export let width: number = 50;
-  export let height: number = 50;
-  const svgContent = \`${content}\`;
+  import type { HTMLAttributes } from 'svelte/elements';
+
+  export interface Props extends HTMLAttributes<SVGElement> {
+	width?: number;
+	height?: number;
+  }
+
+  let { width = 50, height = 50, ...rest }: Props = $props();
 </script>`,
-		templateContent: '{@html svgContent}'
+		templateContent: content
 	};
 };
