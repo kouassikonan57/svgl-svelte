@@ -19,7 +19,7 @@
 		"format": "prettier --write . && eslint . --fix",
 		"lint:eslint": "eslint .",
 		"lint:prettier": "prettier --check .",
-		"lint": "npm run lint:eslint && npm run lint:prettier"
+		"lint": "pnpm lint:eslint && pnpm lint:prettier"
 	},
 	"files": [
 		"dist",
