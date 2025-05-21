@@ -117,7 +117,7 @@ const copySvgComponent = async (svgInfo: Svgl, framework: string) => {
 
 		const content = await getSvgContent(svgUrlToCopy);
 
-		const code = componentTemplate(content, framework);
+		const code = componentTemplate(content);
 
 		if (code) {
 			createFiles(

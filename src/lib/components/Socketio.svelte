@@ -1,10 +1,25 @@
 <script lang="ts">
-	export let width: number = 50;
-	export let height: number = 50;
-	const svgContent = `<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" width="${width}" height="${height}">
-	<circle cx="128" cy="128" r="114" stroke="#010101" stroke-width="20" fill="none" />
-	<path d="M97.637 121.69c27.327-22.326 54.058-45.426 81.98-67.097-14.646 22.505-29.708 44.711-44.354 67.215-12.562.06-25.123.06-37.626-.119zM120.737 134.132c12.621 0 25.183 0 37.745.179-27.505 22.206-54.117 45.484-82.099 67.096 14.646-22.505 29.708-44.77 44.354-67.275z" fill="#010101"/>
-</svg>`;
+	import type { HTMLAttributes } from 'svelte/elements';
+
+	export interface Props extends HTMLAttributes<SVGElement> {
+		width?: number;
+		height?: number;
+	}
+
+	let { width = 50, height = 50, ...rest }: Props = $props();
 </script>
 
-{@html svgContent}
+<svg
+	viewBox="0 0 256 256"
+	xmlns="http://www.w3.org/2000/svg"
+	preserveAspectRatio="xMinYMin meet"
+	{width}
+	{height}
+	{...rest}
+>
+	<circle cx="128" cy="128" r="114" stroke="#010101" stroke-width="20" fill="none" />
+	<path
+		d="M97.637 121.69c27.327-22.326 54.058-45.426 81.98-67.097-14.646 22.505-29.708 44.711-44.354 67.215-12.562.06-25.123.06-37.626-.119zM120.737 134.132c12.621 0 25.183 0 37.745.179-27.505 22.206-54.117 45.484-82.099 67.096 14.646-22.505 29.708-44.77 44.354-67.275z"
+		fill="#010101"
+	/>
+</svg>
