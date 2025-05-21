@@ -31,9 +31,12 @@ jobs:
 
       - name: Build
         run: nr build
-
+        
       - name: Lint
         run: nr lint
+        
+      - name: Format
+        run: nr format
 
   test:
     runs-on: ${{ matrix.os }}
