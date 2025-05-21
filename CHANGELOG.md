@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.0.3
+
+[compare changes](https://github.com/selemondev/svgl-svelte/compare/v0.0.2...v0.0.3)
+
+### 💅 Refactors
+
+- Svg content parser ([4507419](https://github.com/selemondev/svgl-svelte/commit/4507419))
+
+### 🏡 Chore
+
+- Generate components ([9056781](https://github.com/selemondev/svgl-svelte/commit/9056781))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
 ## v0.0.2
 
 [compare changes](https://github.com/selemondev/svgl-svelte/compare/v0.0.1...v0.0.2)
