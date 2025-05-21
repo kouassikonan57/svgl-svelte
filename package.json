@@ -4,6 +4,7 @@
 	"description": "An optimized package with SVG logos to be used as Svelte components ✨",
 	"author": "Selemondev",
 	"private": false,
+	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run prepack",
