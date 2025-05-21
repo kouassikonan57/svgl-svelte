@@ -9,7 +9,7 @@ export const parseSvgContent = (content: string) => {
 		attrs = attrs.replace(/\s*width="[^"]*"/i, '');
 		attrs = attrs.replace(/\s*height="[^"]*"/i, '');
 
-		return `<svg${attrs} {width} {height} {...rest}>`;
+		return `<svg${attrs} width="\${width}" height="\${height}" \${restAttrs}>`;
 	});
 
 	content = content.replace(/`/g, '\\`');
@@ -24,7 +24,9 @@ export const parseSvgContent = (content: string) => {
   }
 
   let { width = 50, height = 50, ...rest }: Props = $props();
+  const restAttrs = Object.entries(rest).map(([k, v]) => \`\${k}="\${v}"\`).join(' ');
+  const svgContent = \`${content}\`;
 </script>`,
-		templateContent: content
+		templateContent: '{@html svgContent}'
 	};
 };

@@ -7,7 +7,7 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build && pnpm prepack",
+		"build": "pnpm prepack",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"generate:components": "pnpm dlx esno scripts/index.ts && pnpm format",
